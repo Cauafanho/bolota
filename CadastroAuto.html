@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CADASTRE SEU AUTOMOVEL </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hamburguer-menu">
+            <input id="menu_toogle" type="checkbox"/>
+            <label class="menu_btn" for="menu_toogle">
+                <span></span>
+                <section></section>
+            </label>
+            <ul class="menu_box">
+                <li><a  href="index.html" class="menu_item"> ESCOLHO </a></li>
+                <li><a  href="cadastro.html" class="menu_item">  ESTE PREMIUM </a></li>
+                <li><a  href="CadastroAuto.html" class="menu_item"> PREMIUM </a></li>
+                <li><a  href="escolhacarro.html" class="menu_item"> ESCOLHO PREMIUM </a></li>
+            </ul>
+        </div>
+        <div class="alinhar05">
+            <h1 class="cadastro"> Cadastro Autómovel</h1>
+            <form method="post" action="insertcarro.php">
+            <p class="cadastrando"> MARCA </p>
+            <input type="text" name="v1" class="barraCadastro" required/>
+            <p class="cadastrando"> MODELO </p>
+            <input type="text" name="v2" class="barraCadastro" required/>
+            <p class="cadastrando"> ANO DO VEÍCULO </p>
+            <input type="number" name="v3" class="barraCadastro" required/>
+            <p class="cadastrando"> COR </p>
+            <input type="text" name="v4" class="barraCadastro" required/>
+            <p class="cadastrando"> PLACA </p>
+            <input type="text" name="v5" class="barraCadastro" required/>
+            <p class="cadastrando"> CRLV </p>
+            <input type="number" name="v6" class="barraCadastro" required/>
+            <p><a href="escolhacarro.html"></a><input type="submit"  class="bottonCadastro2" value="ENVIAR"/></p> 
+        </form>
+        </div>
+    </body>
+</html>

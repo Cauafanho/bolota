@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPAS</title>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hamburguer-menu">
+    <input id="menu_toogle" type="checkbox"/>
+    <label class="menu_btn" for="menu_toogle">
+        <span></span>
+        <section></section>
+    </label>
+    <ul class="menu_box">
+        <form method="post" action="php7.php">
+            <input type="file" name="v1">
+        </form>
+        <div class="separa"><li><a  href="dadosdaconta.html" class="menu_item"> MINHA CONTA </a></li></div>
+        <li><a  href="historicodecompra.html" class="menu_item">  HISTÓRICO DE COMPRA </a></li>
+        <li><a  href="premium.html" class="menu_item"> PREMIUM </a></li>
+        <li><a  href="notificacoes.html" class="menu_item"> NOTIFICAÇÕES </a></li>
+        <li><a  href="suporte.html" class="menu_item"> SUPORTE </a></li>
+    </ul>
+  </div>
+    <section class="alinharMapa">
+      <label> Selecione a cidade desejada : </label>
+      <select class="cidade">
+        <option value="Selecione"> SELECIONE </option>
+        <option value="Paraisópolis"> PARAISÓPOLIS </option>
+      </select>
+      <div class="distancia">
+      <form>
+      <label> Selecione a rua desejada :</label>
+      <select class="direita" id="id">
+        <option> SELECIONE </option>
+        <option value="1" > R.MAL DEODORO </option>
+        <option value="2" > PRACA CEL.JOSÉ VIEIRA </option>
+        <option value="3"> R.BUENO DE PAIVA </option>
+      </select>
+      <input type="button" onclick="teste()" value="VISUALIZAR RUA" class="buttonMapa">
+      </form>
+    <script>
+   function teste()
+   {   
+       var x= document.getElementById('id').value;  
+       
+ switch(x){
+  case '1':
+    document.write('<iframe src="https://www.google.com/maps/embed?pb=!4v1661100967736!6m8!1m7!1sCAoSLEFGMVFpcE51QWU3Q3Vfd043Wk0waW9SSmhta0F3V3duZmc5OFhydGVhanBy!2m2!1d-22.548882701453!2d-45.775062107581!3f92.14233284175319!4f0!5f0.7820865974627469" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>');
+    break;
+  case '2':
+  document.write('<iframe src="https://www.google.com/maps/embed?pb=!4v1662691502108!6m8!1m7!1spzs89W1MsOcDg5zr-RHdgg!2m2!1d-22.55145856497343!2d-45.78054777538471!3f89.07511777212913!4f-15.06145833851545!5f0.7820865974627469" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>');
+    break;
+  case '3':
+  document.write('<iframe src="https://www.google.com/maps/embed?pb=!4v1662691303068!6m8!1m7!1sMAEhLa6nE5ULmkbsYxL1vg!2m2!1d-22.5519575515417!2d-45.78079114650154!3f34.448299369132684!4f-14.256865878635352!5f0.7820865974627469" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>');
+    break;
+  default:
+  document.write('ERRADO');
+}
+   }
+    </script>
+      </div>
+      <div class="textMapa"><p><a href="salacinema.html"> ESCOLHA VAGA </a></p></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> RECUPERAR SENHA </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <div class="hamburguer-menu">
+            <input id="menu_toogle" type="checkbox"/>
+            <label class="menu_btn" for="menu_toogle">
+                <span></span>
+                <section></section>
+            </label>
+            <ul class="menu_box">
+                <li><a  href="dadosdaconta.html" class="menu_item"> MINHA CONTA </a></li>
+                <li><a  href="historicodecompra.html" class="menu_item">  HISTÓRICO DE COMPRA </a></li>
+                <li><a  href="premium.html" class="menu_item"> PREMIUM </a></li>
+                <li><a  href="notificacoes.html" class="menu_item"> NOTIFICAÇÕES </a></li>
+                <li><a  href="suporte.html" class="menu_item"> SUPORTE </a></li>
+            </ul>
+        </div>
+        <section class="container003">  
+        <h1 class="tituloRecup2"> RECUPERAÇÃO DE SENHA </h1>
+	    <div class="alinharRecup2">
+            <form method="post" action="insertrecup.php">
+                <p class="conf"> NOVA SENHA </p>
+                    <div id="input">
+            <input type="password" name="v1" id="nova_senha"/>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDUlEQVQ4jd2SvW3DMBBGbwQVKlyo4BGC4FKFS4+TATKCNxAggkeoSpHSRQbwAB7AA7hQoUKFLH6E2qQQHfgHdpo0yQHX8T3exyPR/ytlQ8kOhgV7FvSx9+xglA3lM3DBgh0LPn/onbJhcQ0bv2SHlgVgQa/suFHVkCg7bm5gzB2OyvjlDFdDcoa19etZMN8Qp7oUDPEM2KFV1ZAQO2zPMBERO7Ra4JQNpRa4K4FDS0R0IdneCbQLb4/zh/c7QdH4NL40tPXrovFpjHQr6PJ6yr5hQV80PiUiIm1OKxZ0LICS8TWvpyyOf2DBQQtcXk8Zi3+JcKfNafVsjZ0WfGgJlZZQxZjdwzX+ykf6u/UF0Fwo5Apfcq8AAAAASUVORK5CYII="/>
+                    </div>
+            <p class="conf"> CONFIRMAÇÃO DA SENHA </p>
+            <input type="password" name="v2" id="conf_senha"/>
+            <div class="moverBottomRecup2"><input type="submit" class="bottomRecup2" value="ENVIAR"/></div>
+            <script type="text/javascript" src="script1.js"></script> 
+        </form> 
+		</div>
+    </section>
+    </body>     
+</html>
