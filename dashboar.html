@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="hamburguer-menu">
+        <input id="menu_toogle" type="checkbox"/>
+        <label class="menu_btn" for="menu_toogle">
+            <span></span>
+            <section></section>
+        </label>
+        <ul class="menu_box">
+            <li><a  href="dashboar.html" class="menu_item"> MINHA CONTA </a></li>
+            <li><a  href="historicodecompra.html" class="menu_item">  HISTÓRICO DE COMPRA </a></li>
+            <li><a  href="premium.html" class="menu_item"> PREMIUM </a></li>
+            <li><a  href="notificacoes.html" class="menu_item"> NOTIFICAÇÕES </a></li>
+        </ul>
+    </div>
+    <section class="areaDashboard">
+        <h1 class="tituloDash"> ALTERAR DADOS </h1>
+            <ul class="ajustes">
+                <li><a  href="dashboar.html" class="alterarDados"> DADOS PESSOAIS </a></li>
+                <li><a  href="alterarcarro.html" class="alterarDados">  VEÍCULO </a></li>
+            </ul>
+            <placeholder>
+        <form method="post" action="dash.php">
+            <section class="formularioDash">
+                <label class="dash">Nome: </label>
+                <input type="text" name="v1"/>
+                <br>
+                <label class="dash">DATA DE NASCIMENTO: </label>
+                <input type="date" name="v2"/>
+                <br>
+                <label class="dash">TELEFONE: </label>
+                <input type="tel" name="v3"/>
+                <br>
+                <label class="dash">CIDADE: </label>
+                <input type="text" name="v4"/>
+                <br>
+                <label class="dash">UF: </label>
+                <input type="text" name="v5"/>
+                <br>
+                <label class="dash">CEP: </label>
+                <input type="number" name="v6"/>
+                <br>
+                <label class="dash">CPF: </label>
+                <input type="number" name="v7"/>
+                <br>
+                <label class="dash">SENHA: </label>
+                <input type="password" name="v8"/>
+                <br>
+                <input type="button" value="ALTERAR" name="v9"/>
+            </section>
+        </form>
+    </placeholder>
+    </section>
+</body>
+</html>

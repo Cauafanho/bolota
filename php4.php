@@ -1,8 +1,7 @@
 <?php
 
-    include 'inserttcc.php';
+header("refresh:1; url=recupsenha2.html");
 
-    $select="SELECT email FROM cadastro where email=$email;";
 
 
 ?>

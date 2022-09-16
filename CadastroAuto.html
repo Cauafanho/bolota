@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
     </head>
     <body>
         <div class="hamburguer-menu">
@@ -14,10 +16,10 @@
                 <section></section>
             </label>
             <ul class="menu_box">
-                <li><a  href="index.html" class="menu_item"> ESCOLHO </a></li>
-                <li><a  href="cadastro.html" class="menu_item">  ESTE PREMIUM </a></li>
-                <li><a  href="CadastroAuto.html" class="menu_item"> PREMIUM </a></li>
-                <li><a  href="escolhacarro.html" class="menu_item"> ESCOLHO PREMIUM </a></li>
+                <li><a  href="dashboar.html" class="menu_item"> MINHA CONTA </a></li>
+                <li><a  href="historicodecompra.html" class="menu_item">  HISTÓRICO DE COMPRA </a></li>
+                <li><a  href="premium.html" class="menu_item"> PREMIUM </a></li>
+                <li><a  href="notificacoes.html" class="menu_item"> NOTIFICAÇÕES </a></li>
             </ul>
         </div>
         <div class="alinhar05">
@@ -34,9 +36,12 @@
             <p class="cadastrando"> PLACA </p>
             <input type="text" name="v5" class="barraCadastro" required/>
             <p class="cadastrando"> CRLV </p>
-            <input type="number" name="v6" class="barraCadastro" required/>
+            <input type="number" name="v6" id="crlv" placeholder="00000000000" class="barraCadastro" required/>
             <p><a href="escolhacarro.html"></a><input type="submit"  class="bottonCadastro2" value="ENVIAR"/></p> 
         </form>
+        <script type="text/javascript">
+            $("#crlv").mask("00000000000");
+        </script>
         </div>
     </body>
 </html>

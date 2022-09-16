@@ -23,45 +23,83 @@ input{
   border-radius: 150px;
 }
 
+/* FADE IN */
+
+.fadeIn {
+  -webkit-animation: fadeIn 3s ease-in-out;
+  -moz-animation: fadeIn 3s ease-in-out;
+  -o-animation: fadeIn 3s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+    }
+    @-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+    }
+    @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+    @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+    /* FADE IN */
+
 /* MENU */
 
 #menu_toogle{
   opacity: 0;
 }
 
+/* ROTAÇÃO NAV */
+
 #menu_toogle:checked + .menu_btn > span{
   transform: rotate(45deg);
+  background-color: white;
 }
 
 #menu_toogle:checked + .menu_btn > span::before{
   top: 0;
   transform: rotate(0deg);
+  background-color: white;
 }
 
 #menu_toogle:checked + .menu_btn > span::after{
   top: 0;
   transform: rotate(90deg);
+  background-color: white;
 }
 
-/* BARRINHA NAV */
+/* ROTAÇÃO NAV 3 */
 
 #menu_toogle:checked + .menu_btn > section{
   transform: rotate(140deg);
+  background-color: white;
 }
 
 #menu_toogle:checked + .menu_btn > section::before{
   top: 0;
   transform: rotate(0deg);
+  background-color: white;
 }
 
 #menu_toogle:checked + .menu_btn > section::after{
   top: 0;
   transform: rotate(190deg);
+  background-color: white;
 }
 
 #menu_toogle:checked ~ .menu_box{
   left: 0 !important;
 }
+
+/* BARRIHA */
 
 .menu_btn{
   position: fixed;
@@ -89,7 +127,7 @@ input{
   top: 8px;
 }
 
-/* DESIGNER 3 LINHA */
+/* DESIGNER 3 barrinha */
 
 .menu_btn > section,
 .menu_btn > section::before,
@@ -107,6 +145,7 @@ input{
   top: -8px;
 }
 
+/***********************/
 
 .menu_box{
   display: block;
@@ -118,7 +157,7 @@ input{
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #616161;
+  background-color: #3B434E;
   box-shadow: 2px 2px 6px rgba(0, 0, -4);
   transition-duration: .25s;
 }
@@ -176,7 +215,7 @@ li{
 
 /* index e premium */
 
-.text{
+div.text{
 margin-top: 30px;
 box-shadow: -1px -1px 10px black;
 height: 50px;
@@ -187,6 +226,7 @@ padding: 3px;
 text-align: center;
 margin-left: 48%;
 }
+
 /* ***************** */
 
 h1{
@@ -203,8 +243,8 @@ img.imagem{
   margin-left: -3%;
 }
 
-.mexer{
-  margin-left: 0%; 
+.text005{
+  margin-left: 80%; 
   margin-top: 25%; 
 }
 
@@ -224,7 +264,7 @@ input[class='alinharInput']{
   margin-top: 20%;
 }
 
-.text{
+div.text{
   margin-left: 30%;
 }
 
@@ -446,10 +486,34 @@ img.adicionar{
 
 }
 
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+  }
+  @-moz-keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1; }
+  }
+  @-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+  @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+
+  .fadeIn {
+    -webkit-animation: fadeIn 3s ease-in-out;
+    -moz-animation: fadeIn 3s ease-in-out;
+    -o-animation: fadeIn 3s ease-in-out;
+    animation: fadeIn 3s ease-in-out;
+    }
+
 /* PAG PRINCIPAL*/
   
 .alinhar005{
-  margin-left: 0%;
+  margin-left: -10%;
   margin-top: 16%;
 }
 
@@ -457,7 +521,8 @@ img.adicionar{
 
 @media only screen and (min-width: 300px) and (max-width: 800px){
 .alinhar005{
-  margin-top: 55%;
+  margin-top: 60%;
+  margin-left: calc(-1% - 10px);
 }  
 }
 
@@ -687,6 +752,26 @@ h1.premium3{
 
 /* MAPA */
 
+iframe{
+  z-index: 1;
+  position: relative;
+}
+
+.textMapa01{
+  margin-top: -10%;
+  box-shadow: -1px -1px 10px black;
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  background-color: #446495;
+  padding: 3px;
+  text-align: center;
+  margin-left: calc(40% + 35px);
+  z-index: 3;
+  position: absolute;
+  line-height: 50px;
+  }
+
 label{
   color: white;
   font-size: 20px;
@@ -887,4 +972,63 @@ h1.escolhavaga{
 h2.escolhavaga{
   margin-left: 20%;
   font-size: 30px;
+}
+
+/* escolha vaga */
+
+div.vaga01{
+  background-color: rgb(255, 0, 0);
+  width: 130px;
+  height: 250px;
+}
+
+#vaga01{
+  width: 130px;
+  height: 250px;
+  
+}
+
+button{
+  color: white;
+  background-color: #102746;
+  border-top: none;
+  border-bottom: none;
+  border-color: yellow;
+}
+
+/* dashboard */
+
+.areaDashboard{
+  background-color: white;
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 25px;
+}
+
+.alterarDados{
+  color: black;
+}
+
+label.dash{
+  color: black;
+}
+
+.formularioDash{
+  margin-left: 45%;
+  margin-top: -10%;
+}
+
+h1.tituloDash{
+  color: black;
+  text-align: center;
+  padding-top: 15px;
+}
+
+ul.ajustes{
+  margin-left: -10%;
+  margin-top: 0%;
 }

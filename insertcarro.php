@@ -9,6 +9,6 @@ $renavam=$_POST['v6'];
     
     $in="insert into cadastro_carro(marca, modelo, ano, cor, placa, renavam)values('$marca', '$modelo', '$ano', '$cor', '$placa', '$renavam');";
     $r=mysqli_query($conn,$in);
-    header("refresh:1; url=escolhavaga.html");
+    header("refresh:0; url=pagprincipal.html");
 
 ?>

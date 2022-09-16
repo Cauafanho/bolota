@@ -11,10 +11,9 @@ $conf_senha=$_POST['v8'];
 
 if($senha == $conf_senha){
     
-    echo "Cadastro Realizado com Sucesso!!!";
     $in="insert into cadastro(nome, email, telefone, rg, cnh, cpf, senha, conf_senha)values('$nome', '$email', '$telefone', '$rg', '$cnh', '$cpf', '$senha', '$conf_senha');";
     $r=mysqli_query($conn,$in);
-    header("refresh:1; url=pagprincipal.html");
+    header("refresh:0; url=pagprincipal.html");
 
 }
 

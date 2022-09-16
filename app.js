@@ -1,4 +1,4 @@
-const estacioSeats = [
+/*const estacioSeats = [
 
     false,
     false,
@@ -69,9 +69,17 @@ const checkSecondVaga = () =>{
 
 reserve();
 
-createSeats(estacioSeats);
+createSeats(estacioSeats); */
 
+/* começar */
 
+const vaga01 = [false];
+const vaga02 = [false];
+const vaga03 = [false];
+
+function reservarVaga(){
+    alert("testando !!!!");
+}
 
 
 

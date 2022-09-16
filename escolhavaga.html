@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css11.css">
+    <link rel="stylesheet" href="style.css">
     <title>Escolha da Vaga</title>
 </head>
 <body>
     <header>
         <h1> Escolha o Número da Vaga Desejada</h1>
     </header>
-    <section>
-        <h2> Status Das Vagas </h2>
-        <div id="seats"></div>
+    <section class="retangulos">
+      <div class="vaga01">
+        <button id="vaga01" onclick="reservarVaga ()"> 01 </button>
+      </div>
+      <div class="vaga02"></div>
+      <div class="vaga03"></div>
     </section>
-    <button id="reserve-btn"> Reservar Assentos </button>
-    <section id="tickets"></section>
     <script src="app.js"></script>
 </body>
 </html>
